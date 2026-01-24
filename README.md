@@ -43,7 +43,7 @@ editdb ./path/to/your.db
 
 ---
 
-For information on setting up your development environment, please read [CONTRIBUTING_ja.md](docs/CONTRIBUTING.md).
+For information on setting up your development environment, please read [CONTRIBUTING.md](docs/CONTRIBUTING.md).
 
 ## License
 
