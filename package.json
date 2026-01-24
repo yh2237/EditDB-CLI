@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "yh2237",
   "type": "module",
+  "keywords": ["cli", "tui", "sqlite", "database", "db", "editor"],
   "repository": {
     "type": "git",
     "url": "https://github.com/yh2237/EditDB-CLI"
