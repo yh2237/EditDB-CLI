@@ -1,5 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 let translations = {};
 let currentLang = 'en';
@@ -11,6 +12,7 @@ function resolve(path, obj) {
 }
 
 export async function init(language) {
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
   let lang = language;
 
   if (!lang) {
@@ -25,7 +27,7 @@ export async function init(language) {
   currentLang = lang;
 
   try {
-    const filePath = path.resolve(process.cwd(), `locales/${currentLang}.json`);
+    const filePath = path.resolve(__dirname, `../locales/${currentLang}.json`);
     const fileContent = await fs.readFile(filePath, 'utf-8');
     translations = JSON.parse(fileContent);
   } catch (error) {
@@ -33,7 +35,7 @@ export async function init(language) {
       `Could not load translations for '${currentLang}'. Falling back to English.`
     );
     currentLang = 'en';
-    const filePath = path.resolve(process.cwd(), `locales/en.json`);
+    const filePath = path.resolve(__dirname, `../locales/en.json`);
     const fileContent = await fs.readFile(filePath, 'utf-8');
     translations = JSON.parse(fileContent);
   }
