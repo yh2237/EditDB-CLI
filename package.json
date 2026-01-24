@@ -1,6 +1,6 @@
 {
   "name": "editdb-cli",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "description": "A CLI tool that allows anyone to easily edit and create SQLite databases. SQLiteデータベースを誰でも簡単に編集、作成できるCLIツール。",
   "license": "MIT",
   "author": "yh2237",
