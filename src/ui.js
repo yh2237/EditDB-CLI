@@ -403,16 +403,5 @@ export async function tableActionPrompt(db, table) {
     } else if (action === UI_ACTIONS.BACK) {
       return;
     }
-    } else if (action === 'multi') {
-      await multiRowActionPrompt(db, currentTable);
-    } else if (action === 'insert') {
-      await insertRow(db, currentTable);
-    } else if (action === 'alter') {
-      currentTable = await alterTablePrompt(db, currentTable);
-    } else if (action === 'schema') {
-      displaySchema(db, currentTable);
-    } else if (action === 'back') {
-      return;
-    }
   }
 }
