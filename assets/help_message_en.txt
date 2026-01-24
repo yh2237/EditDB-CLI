@@ -1,0 +1,11 @@
+Usage: editdb [db_file_path]
+
+Options:
+  -l, --lang [lang]   Set the language (e.g., "en" or "ja")
+  -h, --help          Display this help message
+  -v, --version       Display version information
+
+Repository: ${meta.repositoryURL}
+
+A CLI tool that allows anyone to easily edit and create SQLite databases.
+If no path is specified, it will look for databases in the current directory.

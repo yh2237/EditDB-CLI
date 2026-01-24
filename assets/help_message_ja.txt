@@ -1,0 +1,11 @@
+Usage: editdb [db_file_path]
+
+Options:
+  -l, --lang [lang]   言語を設定します (例: "en" または "ja")
+  -h, --help          このヘルプメッセージを表示
+  -v, --version       バージョン情報を表示
+
+Repository: ${meta.repositoryURL}
+
+SQLiteデータベースを誰でも簡単に編集、作成できるCLIツール。
+パスを指定しない場合、カレントディレクトリからデータベースを選択します。
